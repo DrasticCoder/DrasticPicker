@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DrasticPicker",
+  "version": "1.0",
+  "description": "Yet another color picker with zoom lens in a neobrutalism.",
+  "permissions": ["scripting", "activeTab", "clipboardWrite", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "image.png"
+  },
+  "commands": {
+    "openPicker": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Open the color picker overlay"
+    }
+  }
+}
